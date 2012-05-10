@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{460A34C3-FE70-4E0C-BA50-E7E17CE00961}</ProjectGuid>
+    <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>DPath.monotouch</RootNamespace>
+    <AssemblyName>DPathmonotouch</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchProfiling>true</MtouchProfiling>
+    <MtouchLink>None</MtouchLink>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchLink>None</MtouchLink>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchProfiling>true</MtouchProfiling>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="Screens\PathsIndexScreen.cs" />
+    <Compile Include="Screens\PathsIndexScreen.designer.cs">
+      <DependentUpon>PathsIndexScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\UserLoginScreen.cs" />
+    <Compile Include="Screens\UserLoginScreen.designer.cs">
+      <DependentUpon>UserLoginScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\AppConstants.cs" />
+    <Compile Include="Screens\AchievementIndexScreen.cs" />
+    <Compile Include="Screens\AchievementIndexScreen.designer.cs">
+      <DependentUpon>AchievementIndexScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\AchievementViewModel.cs" />
+    <Compile Include="ViewModels\GoalViewModel.cs" />
+    <Compile Include="ViewModels\PathViewModel.cs" />
+    <Compile Include="AppViewContext.cs" />
+    <Compile Include="Screens\GoalIndexScreen.cs" />
+    <Compile Include="Screens\GoalIndexScreen.designer.cs">
+      <DependentUpon>GoalIndexScreen.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\DPath.mobile.core\DPath.mobile.core.csproj">
+      <Project>{A97F57B8-F63F-4270-86F1-060862E2E1A1}</Project>
+      <Name>DPath.mobile.core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Screens\" />
+    <Folder Include="Components\" />
+    <Folder Include="ViewModels\" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="Screens\PathsIndexScreen.xib" />
+    <InterfaceDefinition Include="Screens\UserLoginScreen.xib" />
+    <InterfaceDefinition Include="Screens\AchievementIndexScreen.xib" />
+    <InterfaceDefinition Include="Screens\GoalIndexScreen.xib" />
+  </ItemGroup>
+</Project>

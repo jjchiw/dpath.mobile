@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DPath.monotouch", "DPath.monotouch\DPath.monotouch.csproj", "{460A34C3-FE70-4E0C-BA50-E7E17CE00961}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DPath.mobile.core", "DPath.mobile.core\DPath.mobile.core.csproj", "{A97F57B8-F63F-4270-86F1-060862E2E1A1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{460A34C3-FE70-4E0C-BA50-E7E17CE00961}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{460A34C3-FE70-4E0C-BA50-E7E17CE00961}.Debug|iPhone.Build.0 = Debug|iPhone
+		{460A34C3-FE70-4E0C-BA50-E7E17CE00961}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{460A34C3-FE70-4E0C-BA50-E7E17CE00961}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{460A34C3-FE70-4E0C-BA50-E7E17CE00961}.Release|iPhone.ActiveCfg = Release|iPhone
+		{460A34C3-FE70-4E0C-BA50-E7E17CE00961}.Release|iPhone.Build.0 = Release|iPhone
+		{460A34C3-FE70-4E0C-BA50-E7E17CE00961}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{460A34C3-FE70-4E0C-BA50-E7E17CE00961}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{A97F57B8-F63F-4270-86F1-060862E2E1A1}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{A97F57B8-F63F-4270-86F1-060862E2E1A1}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{A97F57B8-F63F-4270-86F1-060862E2E1A1}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{A97F57B8-F63F-4270-86F1-060862E2E1A1}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{A97F57B8-F63F-4270-86F1-060862E2E1A1}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{A97F57B8-F63F-4270-86F1-060862E2E1A1}.Release|iPhone.Build.0 = Release|Any CPU
+		{A97F57B8-F63F-4270-86F1-060862E2E1A1}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{A97F57B8-F63F-4270-86F1-060862E2E1A1}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = DPath.monotouch\DPath.monotouch.csproj
+	EndGlobalSection
+EndGlobal

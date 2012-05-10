@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A97F57B8-F63F-4270-86F1-060862E2E1A1}</ProjectGuid>
+    <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>DPath.mobile.core</RootNamespace>
+    <AssemblyName>DPath.mobile.core</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+    <Reference Include="RestSharp.MonoTouch">
+      <HintPath>..\packages\RestSharp.103.1\RestSharp.MonoTouch.dll</HintPath>
+    </Reference>
+    <Reference Include="NewtonsoftJsonMonoTouch">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.5\NewtonsoftJsonMonoTouch.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="..\..\wp7\Dpath.mobile.core\Settings.cs">
+      <Link>Settings.cs</Link>
+    </Compile>
+    <Compile Include="..\..\wp7\Dpath.mobile.core\Controller\IPathController.cs">
+      <Link>Controller\IPathController.cs</Link>
+    </Compile>
+    <Compile Include="..\..\wp7\Dpath.mobile.core\Controller\IUserController.cs">
+      <Link>Controller\IUserController.cs</Link>
+    </Compile>
+    <Compile Include="..\..\wp7\Dpath.mobile.core\Controller\PathController.cs">
+      <Link>Controller\PathController.cs</Link>
+    </Compile>
+    <Compile Include="..\..\wp7\Dpath.mobile.core\Controller\UserController.cs">
+      <Link>Controller\UserController.cs</Link>
+    </Compile>
+    <Compile Include="..\..\wp7\Dpath.mobile.core\Models\Achievement.cs">
+      <Link>Models\Achievement.cs</Link>
+    </Compile>
+    <Compile Include="..\..\wp7\Dpath.mobile.core\Models\Goal.cs">
+      <Link>Models\Goal.cs</Link>
+    </Compile>
+    <Compile Include="..\..\wp7\Dpath.mobile.core\Models\Path.cs">
+      <Link>Models\Path.cs</Link>
+    </Compile>
+    <Compile Include="..\..\wp7\Dpath.mobile.core\Models\User.cs">
+      <Link>Models\User.cs</Link>
+    </Compile>
+    <Compile Include="TinyIoC.cs" />
+    <Compile Include="AppContext.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Controller\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+</Project>

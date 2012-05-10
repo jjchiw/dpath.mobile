@@ -24,11 +24,7 @@ namespace Dpath.Mobile.Core.Controller
 
 		public void VerifyToken(string email, string token, Action<User> callback)
 		{
-			var request = new RestRequest
-			{
-				Resource = "/api/paths/user/validate",
-				Method = Method.POST
-			};
+			var request = new RestRequest("/api/paths/user/validate", Method.POST);
 
 			request.AddParameter("Email", email);
 			request.AddParameter("Token", token);

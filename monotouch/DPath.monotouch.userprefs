@@ -1,0 +1,26 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="DPath.mobile.core/AppContext.cs">
+    <Files>
+      <File FileName="../wp7/Dpath.mobile.core/Controller/PathController.cs" Line="15" Column="26" />
+      <File FileName="../wp7/Dpath.mobile.core/Settings.cs" Line="8" Column="56" />
+      <File FileName="../wp7/Dpath.mobile.core/Models/User.cs" Line="3" Column="1" />
+      <File FileName="DPath.mobile.core/AppContext.cs" Line="23" Column="3" />
+      <File FileName="../../Vamoos/Vamoos.Core/AppContext.cs" Line="11" Column="44" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="DPath.monotouch" expanded="True" />
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State expanded="True" selected="True" />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
