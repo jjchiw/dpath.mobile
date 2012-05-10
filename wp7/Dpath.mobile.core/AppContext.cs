@@ -10,6 +10,7 @@ using System.Windows.Media.Animation;
 using System.Windows.Shapes;
 using Dpath.Mobile.Core.Controller;
 using Dpath.Mobile.Core.Models;
+using Ninject;
 
 namespace Dpath.Mobile.Core
 {
